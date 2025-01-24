@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Noto Sans KR', Arial, sans-serif;
             margin: 20px;
+            background-color: #f8f8f8;
         }
-        h1, h2 {
+        h2, h3 {
             text-align: center;
         }
         .section {
@@ -18,54 +19,61 @@
             text-align: center;
         }
         .video {
-            margin-bottom: -10px;
+            margin-bottom: 20px;
+            position: relative;
         }
         .video iframe {
-            width: 700px;
+            width: 100%;
+            max-width: 700px;
             height: 394px;
             border: none;
+        }
+        .video-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
         }
     </style>
 </head>
 <body>
-  <br><br><br><br>
     <h2>나종현</h2>
     <h2>사운드 디자인 포트폴리오</h2>
-  <br><br><br>
+
     <div class="section">
         <h2>인게임 (In-Game)</h2>
-                <div class="video">
-            <iframe src="https://www.youtube.com/embed/PnsVsxRiblA" allowfullscreen></iframe>
+        <div class="video-container">
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/PnsVsxRiblA" allowfullscreen></iframe>
+                <h3>아르케랜드</h3>
+            </div>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/H-_AGADLgoM" allowfullscreen></iframe>
+                <h3>오버킬</h3>
+            </div>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/ss2m-w6I6Gw" allowfullscreen></iframe>
+                <h3>검은신화 오공</h3>
+            </div>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/f-8Gpsb6Z9s" allowfullscreen></iframe>
+                <h3>검은신화 오공 2</h3>
+            </div>
         </div>
-        <h3>아르케랜드</h3>
-        <br><br>
-        <div class="video">
-            <iframe src="https://www.youtube.com/embed/H-_AGADLgoM" allowfullscreen></iframe>
-        </div>
-        <h3>오버킬</h3>
-        <br><br>
-        <div class="video">
-            <iframe src="https://www.youtube.com/embed/ss2m-w6I6Gw" allowfullscreen></iframe>
-        <div class="video">
-            <iframe src="https://www.youtube.com/embed/f-8Gpsb6Z9s" allowfullscreen></iframe>
-        </div>
-        <h3>검은신화 오공</h3>
-        <br><br>
-
     </div>
-<br><br>
+
     <div class="section">
         <h2>시네마틱 (Cinematic)</h2>
-        <div class="video">
-            <iframe src="https://www.youtube.com/embed/yllgzLldNaU" allowfullscreen></iframe>
+        <div class="video-container">
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/yllgzLldNaU" allowfullscreen></iframe>
+                <h3>더 위쳐 4</h3>
+            </div>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/q7bBo7EANuM" allowfullscreen></iframe>
+                <h3>이모탈스 오브 아베움</h3>
+            </div>
         </div>
-        <h3>더 위쳐 4</h3>
-        <br><br>
-        <div class="video">
-            <iframe src="https://www.youtube.com/embed/q7bBo7EANuM" allowfullscreen></iframe>
-        </div>
-        <h3>이모탈스 오브 아베움</h3>
     </div>
-    <br><br>
 </body>
 </html>
