@@ -29,21 +29,25 @@
             justify-content: center; /* 가로로 정렬 */
             gap: 140px; /* 두 카테고리 간격 100px 추가 */
             margin-top: 40px;
+            flex-wrap: wrap; /* 화면 크기에 따라 줄바꿈 가능 */
         }
         .category {
             display: flex;
             flex-direction: column; /* 영상들을 세로로 정렬 */
             align-items: center;
+            flex: 1 1 45%; /* 각 카테고리 영역을 45%로 설정 */
         }
         .category h2 {
             text-align: center;
         }
         .video {
             margin-bottom: 20px; /* 영상 간의 기본 간격 */
+            width: 100%; /* 화면 크기에 맞게 가로폭을 100%로 설정 */
         }
         .video iframe {
-            width: 700px;
-            height: 394px;
+            width: 100%; /* 화면 크기에 맞게 가로폭을 100%로 설정 */
+            height: auto; /* 비율에 맞춰 자동 높이 조정 */
+            aspect-ratio: 16 / 9; /* 16:9 비율 유지 */
             border: none;
         }
         /* 검은신화 오공 영상 두 개를 각각 독립적으로 배치 */
@@ -51,6 +55,7 @@
             display: flex;
             flex-direction: column; /* 세로로 정렬 */
             gap: 0px; /* 두 영상 간 간격을 0px로 설정 */
+            width: 100%;
         }
         .video-container .video {
             margin-bottom: 0px; /* 각 영상 간의 마진을 0px로 설정 */
