@@ -39,7 +39,7 @@
             text-align: center;
         }
         .video {
-            margin-bottom: 20px;
+            margin-bottom: 20px; /* 영상 간의 기본 간격 */
         }
         .video iframe {
             width: 700px;
@@ -50,7 +50,10 @@
         .video-container {
             display: flex;
             flex-direction: column; /* 세로로 정렬 */
-            gap: 20px;
+            gap: 0px; /* 두 영상 간 간격을 0px로 설정 */
+        }
+        .video-container .video {
+            margin-bottom: 0px; /* 각 영상 간의 마진을 0px로 설정 */
         }
     </style>
 </head>
