@@ -46,12 +46,11 @@
             height: 394px;
             border: none;
         }
-        /* 검은신화 오공 두 개를 세로로 배치 */
-        .double-video {
+        /* 검은신화 오공 영상 두 개를 각각 독립적으로 배치 */
+        .video-container {
             display: flex;
             flex-direction: column; /* 세로로 정렬 */
             gap: 20px;
-            margin-bottom: 20px;
         }
     </style>
 </head>
@@ -72,11 +71,14 @@
                 <iframe src="https://www.youtube.com/embed/H-_AGADLgoM" allowfullscreen></iframe>
                 <h3>오버킬</h3>
             </div>
-            <!-- 검은신화 오공 두 개를 세로로 붙여놓기 -->
-            <div class="video">
-                <iframe src="https://www.youtube.com/embed/ss2m-w6I6Gw" allowfullscreen></iframe>
-            <div class="video">
-                <iframe src="https://www.youtube.com/embed/f-8Gpsb6Z9s" allowfullscreen></iframe>
+            <!-- 검은신화 오공 영상 두 개를 각각 독립적으로 배치 -->
+            <div class="video-container">
+                <div class="video">
+                    <iframe src="https://www.youtube.com/embed/ss2m-w6I6Gw" allowfullscreen></iframe>
+                </div>
+                <div class="video">
+                    <iframe src="https://www.youtube.com/embed/f-8Gpsb6Z9s" allowfullscreen></iframe>
+                </div>
                 <h3>검은 신화 오공</h3> <!-- 마지막 영상에만 텍스트 추가 -->
             </div>
         </div>
@@ -96,4 +98,4 @@
     </div>
 
 </body>
-</html
+</html>
