@@ -21,18 +21,23 @@
         .video {
             margin-bottom: 20px;
             position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%; /* 16:9 비율 */
         }
         .video iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
-            max-width: 700px;
-            height: 394px;
+            height: 100%;
             border: none;
         }
         /* 그리드 레이아웃, 양쪽 정렬 */
         .content {
             display: grid;
             grid-template-columns: 1fr 1fr; /* 두 개의 컬럼 */
-            gap: 40px; /* 두 컬럼 사이 간격 */
+            gap: 20px; /* 두 컬럼 사이 간격 */
             justify-items: center; /* 각 컬럼을 가운데 정렬 */
             align-items: start; /* 각 컬럼을 위로 정렬 */
             margin-top: 40px;
