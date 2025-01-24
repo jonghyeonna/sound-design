@@ -16,7 +16,6 @@
         }
         .section {
             margin-bottom: 60px;
-            text-align: center;
         }
         .video {
             margin-bottom: 20px;
@@ -28,11 +27,21 @@
             height: 394px;
             border: none;
         }
-        .video-container {
+        /* 두 카테고리를 세로로 배치 */
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* 두 개의 컬럼 */
+            gap: 40px; /* 컬럼 간격 */
+            margin-top: 40px;
+        }
+        /* 인게임 영상은 왼쪽, 시네마틱 영상은 오른쪽 */
+        .category {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             gap: 20px;
-            flex-wrap: wrap;
+        }
+        .category h2 {
+            text-align: center;
         }
     </style>
 </head>
@@ -40,9 +49,11 @@
     <h2>나종현</h2>
     <h2>사운드 디자인 포트폴리오</h2>
 
-    <div class="section">
-        <h2>인게임 (In-Game)</h2>
-        <div class="video-container">
+    <!-- 두 개의 세로 컬럼 배치 -->
+    <div class="content">
+        <!-- 왼쪽: 인게임 섹션 -->
+        <div class="category">
+            <h2>인게임 (In-Game)</h2>
             <div class="video">
                 <iframe src="https://www.youtube.com/embed/PnsVsxRiblA" allowfullscreen></iframe>
                 <h3>아르케랜드</h3>
@@ -60,11 +71,10 @@
                 <h3>검은신화 오공 2</h3>
             </div>
         </div>
-    </div>
 
-    <div class="section">
-        <h2>시네마틱 (Cinematic)</h2>
-        <div class="video-container">
+        <!-- 오른쪽: 시네마틱 섹션 -->
+        <div class="category">
+            <h2>시네마틱 (Cinematic)</h2>
             <div class="video">
                 <iframe src="https://www.youtube.com/embed/yllgzLldNaU" allowfullscreen></iframe>
                 <h3>더 위쳐 4</h3>
