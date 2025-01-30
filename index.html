@@ -81,6 +81,19 @@
         .video-container .video {
             margin-bottom: 0px; /* 각 영상 간의 마진을 0px로 설정 */
         }
+
+        /* 모바일 화면에서 UI 카테고리 수직으로 배치 */
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column; /* 모바일에서는 세로 정렬 */
+                gap: 40px; /* 카테고리 간격을 조금 더 크게 설정 */
+            }
+
+            /* UI 카테고리가 인게임 카테고리 아래에 배치되도록 추가 */
+            .category:nth-child(3) {
+                order: 2; /* UI 카테고리가 두 번째로 배치되도록 설정 */
+            }
+        }
     </style>
 </head>
 <body>
@@ -130,7 +143,7 @@
         <div class="category">
             <h2>UI</h2>
             <div class="video">
-                <iframe src="https://www.youtube.com/embed/8mXoOxnfT1Q" allowfullscreen></iframe>
+                <iframe src="https://youtu.be/8mXoOxnfT1Q" allowfullscreen></iframe>
                 <h3>AFK새로운여정</h3>
             </div>
         </div>
