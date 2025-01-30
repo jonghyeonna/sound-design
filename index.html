@@ -46,8 +46,10 @@
         .video {
             margin-bottom: 20px; /* 영상 간의 기본 간격 */
             width: 100%; /* 화면 크기에 맞게 가로폭을 100%로 설정 */
+            position: relative;
+            padding-top: 56.25%; /* 16:9 비율 */
+            overflow: hidden;
         }
-        /* 영상 비율을 유지하기 위해 padding-top 방식 사용 */
         .video iframe {
             width: 100%; /* 화면 크기에 맞게 가로폭을 100%로 설정 */
             height: 100%; /* 자동 높이 조정 */
@@ -56,13 +58,16 @@
             left: 0;
             border: none;
         }
-
-        .video {
-            position: relative;
-            width: 100%; /* 가로폭을 100%로 설정 */
-            padding-top: 56.25%; /* 16:9 비율 (9 / 16 * 100 = 56.25%) */
-            overflow: hidden;
-            margin-bottom: 20px;
+        .video h3 {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            margin: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* 제목이 가려지지 않도록 배경 추가 */
+            color: white; /* 텍스트 색상 */
+            padding: 5px 10px;
+            font-size: 18px;
         }
 
         /* 검은신화 오공 영상 두 개를 각각 독립적으로 배치 */
@@ -99,11 +104,12 @@
             <div class="video-container">
                 <div class="video">
                     <iframe src="https://www.youtube.com/embed/ss2m-w6I6Gw" allowfullscreen></iframe>
+                    <h3>검은 신화 오공</h3>
                 </div>
                 <div class="video">
                     <iframe src="https://www.youtube.com/embed/f-8Gpsb6Z9s" allowfullscreen></iframe>
+                    <h3>검은 신화 오공</h3>
                 </div>
-                <h3>검은 신화 오공</h3> <!-- 마지막 영상에만 텍스트 추가 -->
             </div>
         </div>
 
