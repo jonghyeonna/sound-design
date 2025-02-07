@@ -36,7 +36,7 @@
             display: flex;
             flex-direction: column; /* 영상들을 세로로 정렬 */
             align-items: center;
-            flex: 1 1 30%; /* 각 카테고리 너비를 30%로 설정 */
+            flex: 1 1 45%; /* 각 카테고리 너비를 45%로 설정 */
             max-width: 600px; /* 각 카테고리 최대 너비 설정 */
             width: 100%;
         }
@@ -102,7 +102,7 @@
     <h2>사운드 디자인 포트폴리오</h2>
 
     <div class="content">
-        <!-- 왼쪽: 인게임 섹션 -->
+        <!-- 첫 번째 줄: 인게임, 시네마틱 섹션 -->
         <div class="category">
             <h2>인게임 (In-Game)</h2>
             <div class="video">
@@ -126,7 +126,6 @@
             </div>
         </div>
 
-        <!-- 오른쪽: 시네마틱 섹션 -->
         <div class="category">
             <h2>시네마틱 (Cinematic)</h2>
             <div class="video">
@@ -138,8 +137,8 @@
                 <h3>이모탈스 오브 아베움</h3>
             </div>
         </div>
-
-        <!-- 오른쪽: UI 섹션 추가 -->
+        
+        <!-- 두 번째 줄: UI, Engine 섹션 -->
         <div class="category">
             <h2>UI</h2>
             <div class="video">
@@ -147,9 +146,18 @@
                 <h3>AFK새로운여정</h3>
             </div>
         </div>
+
+        <div class="category">
+            <h2>Engine</h2>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/NbCGqxhM7wI" allowfullscreen></iframe>
+                <h3>언리얼엔진 사운드 적용</h3>
+            </div>
+        </div>
     </div>
-<!-- 100% privacy-first analytics -->
-<script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+
+    <!-- 100% privacy-first analytics -->
+    <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
 
 </body>
 </html>
